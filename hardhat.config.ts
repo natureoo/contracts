@@ -46,7 +46,17 @@ const config: HardhatUserConfig = {
   networks: {
 
     localhost: {
-      url: "http://127.0.0.1:8545",
+      url: "https://polygon-mumbai.g.alchemy.com/v2/OL8kLZr68h-H_BIJLwFeWXDV9XNAcogo",
+      accounts: {
+        mnemonic: DEFAULT_MNEMONIC,
+        path: "m/44'/60'/0'/0",
+        initialIndex: 0,
+        count: 20,
+      },
+    },
+
+    mumbai: {
+      url: "https://polygon-mumbai.g.alchemy.com/v2/OL8kLZr68h-H_BIJLwFeWXDV9XNAcogo",
       accounts: {
         mnemonic: DEFAULT_MNEMONIC,
         path: "m/44'/60'/0'/0",

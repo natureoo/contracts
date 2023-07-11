@@ -111,7 +111,8 @@ describe("Atomic Sig Validator", function () {
     await publishState(state, require("../common-data/issuer_genesis_state.json"));
 
     const { inputs, pi_a, pi_b, pi_c } = prepareInputs(
-      require("./data/valid_sig_user_non_genesis_challenge_address.json")
+      // require("./data/valid_sig_user_non_genesis_challenge_address.json")
+      require("./data/demo/my-vp.json")
     );
 
     const account = "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266";
